@@ -4,16 +4,57 @@
   
   <url>
     <loc>https://html6.club/</loc>
+    <lastmod>2019-06-26T14:24:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://html6.club/post/demo/</loc>
+    <lastmod>2019-06-26T14:24:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://html6.club/post/</loc>
+    <lastmod>2019-06-26T14:24:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://html6.club/post/github-private-org-push/</loc>
+    <lastmod>2019-01-10T20:52:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://html6.club/tags/</loc>
+    <lastmod>2019-01-10T20:52:16+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://html6.club/tags/github/</loc>
+    <lastmod>2019-01-10T20:52:16+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://html6.club/tags/weinre/</loc>
+    <lastmod>2017-02-05T17:39:16+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://html6.club/post/use-weinre-doc/</loc>
+    <lastmod>2017-02-05T17:39:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://html6.club/tags/%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95/</loc>
+    <lastmod>2017-02-05T17:39:16+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://html6.club/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://html6.club/tags/</loc>
     <priority>0</priority>
   </url>
   

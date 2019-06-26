@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>weinre on Cantatas</title>
+    <link>https://html6.club/tags/weinre/</link>
+    <description>Recent content in weinre on Cantatas</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 05 Feb 2017 17:39:16 +0800</lastBuildDate>
+    
+	<atom:link href="https://html6.club/tags/weinre/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用weinre真机调试移动端H5页面</title>
+      <link>https://html6.club/post/use-weinre-doc/</link>
+      <pubDate>Sun, 05 Feb 2017 17:39:16 +0800</pubDate>
+      
+      <guid>https://html6.club/post/use-weinre-doc/</guid>
+      <description> 1. 安装 npm npm install -g weinre  yarn yarn add weinre  2. 启动 weinre --httpPort 8081 --boundHost -all- /*这里的端口8081可以自定义*/  3. 浏览器打开weinre首页 4. 调试页面js引入 5. 远程真机调试  进入要调试的设备：
+  远程设备调试：
+  手机端效果：
+ </description>
+    </item>
+    
+  </channel>
+</rss>

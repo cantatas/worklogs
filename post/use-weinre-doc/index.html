@@ -4,10 +4,10 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="只能调试 html/css，不能调试js">
   <meta name="generator" content="Hugo 0.55.6" />
 
-  <title>Cantatas</title>
+  <title>使用weinre真机调试移动端H5页面 &middot; Cantatas</title>
 
   
   
@@ -39,9 +39,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
  
-  
-  <link rel="alternate" type="application/rss+xml" title="Cantatas"
-    href='/index.xml' />
   
 
   
@@ -77,11 +74,6 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href='/index.xml'><i
-          class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
     
 
     
@@ -177,87 +169,12 @@
 
 
 <div class="header">
-  <h1>Cantatas</h1>
-  <h2></h2>
+  <h1>使用weinre真机调试移动端H5页面</h1>
+  <h2>只能调试 html/css，不能调试js</h2>
 </div>
-
 <div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="https://html6.club/post/demo/">Demo</a></h2>
 
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>26 Jun 2019, 14:24</time>
-  </div>
-
-  
-
-  
-
-  
-
-</div>
-
-  </header>
-
-  <p>
-  
-  </p>
-
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://html6.club/post/github-private-org-push/">Github 私有仓库代码提交</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>10 Jan 2019, 20:52</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://html6.club/tags/github">github</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  </header>
-
-  <p>
-   1. 在github上创建仓库名为 “githubDemo” 选择 “Private” 账号示例:  github账号：githubName github密码：8888888  2. clone拉取私有仓库到本地  拉取URL规则：”账号@github.com/账号/仓库名.git“
- git clone https://githubName@github.com/githubName/githubDemo.git  3. push提交到远程私有仓库  将你的代码拷贝到 “githubDemo” 文件夹中,执行如下代码:   提交RUL规则：“账号:密码@github.com/账号/仓库名.git”
- git remote add origin https://githubName:88888888@github.com/githubName/githubDemo.git git add . git commit -m &quot;first commit&quot; git push --set-upstream origin master  
-  </p>
-
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://html6.club/post/use-weinre-doc/">使用weinre真机调试移动端H5页面</a></h2>
-
-    <div class="post-meta">
+  <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
@@ -284,22 +201,82 @@
 
 </div>
 
-  </header>
-
-  <p>
-   1. 安装 npm npm install -g weinre  yarn yarn add weinre  2. 启动 weinre --httpPort 8081 --boundHost -all- /*这里的端口8081可以自定义*/  3. 浏览器打开weinre首页 4. 调试页面js引入 5. 远程真机调试  进入要调试的设备：
-  远程设备调试：
-  手机端效果：
- 
-  </p>
-
-  
-</article>
-
   
 
-  
+<h3 id="1-安装">1. 安装</h3>
 
+<h5 id="npm">npm</h5>
+
+<pre><code>npm install -g weinre
+</code></pre>
+
+<h5 id="yarn">yarn</h5>
+
+<pre><code>yarn add weinre
+</code></pre>
+
+<h3 id="2-启动">2. 启动</h3>
+
+<pre><code>weinre --httpPort 8081 --boundHost -all-    /*这里的端口8081可以自定义*/
+</code></pre>
+
+<h3 id="3-浏览器打开weinre首页">3. 浏览器打开weinre首页</h3>
+
+<p><img src="https://img-blog.csdn.net/20170205174740856" alt="浏览器打开weinre首页截图" /></p>
+
+<h3 id="4-调试页面js引入">4. 调试页面js引入</h3>
+
+<p><img src="https://img-blog.csdn.net/20170205172425854" alt="调试页面js引入截图" /></p>
+
+<h3 id="5-远程真机调试">5. 远程真机调试</h3>
+
+<blockquote>
+<p>进入要调试的设备：</p>
+</blockquote>
+
+<p><img src="https://img-blog.csdn.net/20170205172533200" alt="进入要调试的设备截图" /></p>
+
+<blockquote>
+<p>远程设备调试：</p>
+</blockquote>
+
+<p><img src="https://img-blog.csdn.net/20170205174247802" alt="远程设备调试截图" /></p>
+
+<blockquote>
+<p>手机端效果：</p>
+</blockquote>
+
+<p><img src="https://img-blog.csdn.net/20170205173926041" alt="远程设备调试截图" /></p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://html6.club/post/github-private-org-push/">Github 私有仓库代码提交</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://html6.club/post/github-private-org-push/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
 
 </div>
 
