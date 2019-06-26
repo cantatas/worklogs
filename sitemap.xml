@@ -4,24 +4,19 @@
   
   <url>
     <loc>https://html6.club/</loc>
-    <lastmod>2019-06-26T14:24:23+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://html6.club/post/demo/</loc>
-    <lastmod>2019-06-26T14:24:23+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://html6.club/post/</loc>
-    <lastmod>2019-06-26T14:24:23+08:00</lastmod>
+    <lastmod>2019-01-10T20:52:16+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://html6.club/post/github-private-org-push/</loc>
     <lastmod>2019-01-10T20:52:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://html6.club/post/</loc>
+    <lastmod>2019-01-10T20:52:16+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -54,7 +49,7 @@
   </url>
   
   <url>
-    <loc>https://html6.club/categories/</loc>
+    <loc>https://html6.club/topics/</loc>
     <priority>0</priority>
   </url>
   

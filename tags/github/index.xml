@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>github on Cantatas</title>
+    <title>github on CANTATAS</title>
     <link>https://html6.club/tags/github/</link>
-    <description>Recent content in github on Cantatas</description>
+    <description>Recent content in github on CANTATAS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
+    <copyright>&amp;copy; 2019. All rights reserved.</copyright>
     <lastBuildDate>Thu, 10 Jan 2019 20:52:16 +0800</lastBuildDate>
     
 	<atom:link href="https://html6.club/tags/github/index.xml" rel="self" type="application/rss+xml" />
