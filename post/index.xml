@@ -24,6 +24,17 @@
     </item>
     
     <item>
+      <title>display: none与visibility: hidden的区别</title>
+      <link>https://html6.club/post/display-and-visibility/</link>
+      <pubDate>Mon, 15 May 2017 20:01:22 +0300</pubDate>
+      
+      <guid>https://html6.club/post/display-and-visibility/</guid>
+      <description>visibility: hidden和display: none的区别不仅仅在于display: none隐藏后的元素不占据任何空间，而visibility: hidden隐藏后的元素空间依旧保留 ，实际上没那么简单，visibility是一个非常有故事性的属性 1、visibility具有继承性，给父元素设置 visibility:hidden; 子元素也会继承这个属性。但是如果重新给子元素设置visibility: visible,则子元素又会显示出来。这个和display: none有着质的区别
+2、visibility: hidden 不会影响计数器的计数，如图所示，visibility: hidden 虽然让一个元素不见了，但是其计数器仍在运行。这和display: none完全不一样
+3、CSS3 的 transition 支持 visibility 属性，但是并不支持 display，由于 transition 可以延迟执行，因此可以配合visibility使用纯 css 实现 hover 延时显示效果。提高用户体验。</description>
+    </item>
+    
+    <item>
       <title>使用weinre真机调试移动端H5页面</title>
       <link>https://html6.club/post/use-weinre-doc/</link>
       <pubDate>Sun, 05 Feb 2017 17:39:16 +0800</pubDate>
