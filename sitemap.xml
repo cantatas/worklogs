@@ -3,26 +3,55 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://html6.club/post/axios-vulnerability/</loc>
+    <lastmod>2019-05-10T14:58:31+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://html6.club/</loc>
-    <lastmod>2019-01-10T20:52:16+08:00</lastmod>
+    <lastmod>2019-05-10T14:58:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://html6.club/post/</loc>
+    <lastmod>2019-05-10T14:58:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://html6.club/tags/</loc>
+    <lastmod>2019-05-10T14:58:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://html6.club/tags/ajax/</loc>
+    <lastmod>2019-05-10T14:58:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://html6.club/tags/axios/</loc>
+    <lastmod>2019-05-10T14:58:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://html6.club/tags/axios-dos/</loc>
+    <lastmod>2019-05-10T14:58:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://html6.club/tags/axios%E6%BC%8F%E6%B4%9E/</loc>
+    <lastmod>2019-05-10T14:58:31+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://html6.club/post/github-private-org-push/</loc>
     <lastmod>2019-01-10T20:52:16+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://html6.club/post/</loc>
-    <lastmod>2019-01-10T20:52:16+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://html6.club/tags/</loc>
-    <lastmod>2019-01-10T20:52:16+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

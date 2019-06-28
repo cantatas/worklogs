@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>axios漏洞 on CANTATAS</title>
+    <link>https://html6.club/tags/axios%E6%BC%8F%E6%B4%9E/</link>
+    <description>Recent content in axios漏洞 on CANTATAS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2019. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 10 May 2019 14:58:31 +0800</lastBuildDate>
+    
+	<atom:link href="https://html6.club/tags/axios%E6%BC%8F%E6%B4%9E/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Axios发现了一个 DoS 漏洞</title>
+      <link>https://html6.club/post/axios-vulnerability/</link>
+      <pubDate>Fri, 10 May 2019 14:58:31 +0800</pubDate>
+      
+      <guid>https://html6.club/post/axios-vulnerability/</guid>
+      <description> axios是一种流行的基于promise的现代JavaScript HTTP客户端，通常用于浏览器和Nodejs服务器项目，npm每周下载超过300万次。
+早在2017年，开发人员Jeremy Apthorp就在项目的GitHub问题队列中讨论并共享了该漏洞。
+受影响的axios版本容易受到拒绝服务（DoS）的影响，因为即使maxContentLength超过了内容，内容也会继续处理，从而导致I / O和CPU使用率增加。
+关于此漏洞 Anthorp在GitHub问题中共享了一个代码片段，以显示axios API的示例用例，限制了收到的HTTP响应的大小：
+require(&#39;axios&#39;).get( &#39;https://upload.wikimedia.org/wikipedia/commons/f/fe/A_Different_Slant_on_Carina.jpg&#39;, { maxContentLength: 2000 } ) .then(d =&amp;gt; console.log(&#39;done&#39;)) .catch(e =&amp;gt; console.log(e.toString()))  但是，无论内容长度限制如何，HTTP连接都将保持打开状态，直到传输完整的文件大小数据，从而允许任何控制远程域或窃听不安全线路的人提供大文件大小并阻止来自完成了很长时间。
+在撰写本文时，尚未发布针对此漏洞的官方修复，但在项目的GitHub存储库中打开了以解决问题的Pull Request形式的社区参与，并等待合并和发布。
+我该怎么办？ 在您对axios的每次调用中应用以下缓解措施，以针对此漏洞进行防御性编码：
+axios({ url: ..., maxContentLength: 2000, }).catch((error) =&amp;gt; { error.request.res.destroy(); });  </description>
+    </item>
+    
+  </channel>
+</rss>
