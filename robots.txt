@@ -1,1 +1,3 @@
 User-agent: *
+Disallow: 
+Sitemap: https://html6.club/sitemap.xml
