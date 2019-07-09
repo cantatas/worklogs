@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="想知道是否值得把时间投入在新的技术、工具或库上面？Sacha Greif 考虑了12个因素，包括功能、稳定性、社区和趋势。">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  <title>评估任何新的 JavaScript 库时，需要考虑的12件事 &middot; CANTATAS</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://html6.club/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://html6.club/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://html6.club/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://html6.club/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://html6.club/">Catatas</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://html6.club/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://html6.club/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://html6.club/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>评估任何新的 JavaScript 库时，需要考虑的12件事</h1>
+  <h2>想知道是否值得把时间投入在新的技术、工具或库上面？Sacha Greif 考虑了12个因素，包括功能、稳定性、社区和趋势。</h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2018/09/25 12:02</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://html6.club/tags/javascript%E5%BA%93">JavaScript库</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<h2 id="1-引言">1 引言</h2>
+
+<p>作者给出了从 12 个角度全面分析 JS 库的可用性，分别是：</p>
+
+<ol>
+<li>特性</li>
+<li>稳定性</li>
+<li>性能</li>
+<li>包生态</li>
+<li>社区</li>
+<li>学习曲线</li>
+<li>文档</li>
+<li>工具</li>
+<li>发展历史</li>
+<li>团队</li>
+<li>兼容性</li>
+<li>趋势</li>
+</ol>
+
+<p>下面总结一下作者的观点。</p>
+
+<h2 id="2-概述-精读">2 概述 &amp; 精读</h2>
+
+<h3 id="特性">特性</h3>
+
+<p>当你调研一个 JS 库，功能当然是最重要的，就好比 React 的用于开发 UI 界面非常方便，这是流行起来的一部分因素。</p>
+
+<p>但同时 React 解决的问题很聚焦，于是把例如 Router 和 Store 部分交给社区给解决方案，这就让 Vue 的官方维护生态模式发展了起来。但这更多取决于你的偏好，像 lodash 这种精简的库也会长盛不衰，重要的是这个库提供的能力是否解决了你的业务问题。</p>
+
+<p><strong>评分：</strong></p>
+
+<ul>
+<li>A - 化腐朽为神奇。</li>
+<li>B - 更优雅的解决方案。</li>
+<li>C - 比现有方案差。</li>
+</ul>
+
+<hr />
+
+<h3 id="稳定性">稳定性</h3>
+
+<p>这个库如果经常出 BUG，那显然无法在生产环境使用。最好经过严格的测试，保证这个库一定不会出错，这样我们就可以专心排查业务的问题了。</p>
+
+<p><strong>评分：</strong></p>
+
+<ul>
+<li>A - BUG 很少，方便调试。</li>
+<li>B - 不会影响你的稳定性，比如出 BUG 概率和你的业务代码相近。</li>
+<li>C - 引入该库会让你背线上故障。</li>
+</ul>
+
+<hr />
+
+<h3 id="性能">性能</h3>
+
+<p>这个库如果经常出 BUG，那显然无法在生产环境使用。最好经过严格的测试，保证这个库一定不会出错，这样我们就可以专心排查业务的问题了。</p>
+
+<p><strong>评分：</strong></p>
+
+<ul>
+<li>A - BUG 很少，方便调试。</li>
+<li>B - 不会影响你的稳定性，比如出 BUG 概率和你的业务代码相近。</li>
+<li>C - 引入该库会让你背线上故障。</li>
+</ul>
+
+<hr />
+
+<h3 id="性能-1">性能</h3>
+
+<p>如果让用户 15 秒才能打开网页，那一切都是徒劳。</p>
+
+<p>拿 PReact 为例子，为什么 API 相同的轮子可以活下来？因为体积小，而且 PReact 把宣传重点放在性能上。</p>
+
+<p>如何一句话说明白你不是在造无用的轮子？性能更好。</p>
+
+<p><strong>评分：</strong></p>
+
+<ul>
+<li>A - 小体积，高性能，支持各种黑科技特性比如 Tree shaking。</li>
+<li>B - 对性能没有影响。</li>
+<li>C - 导致性能降低。</li>
+</ul>
+
+<hr />
+
+<h3 id="包生态">包生态</h3>
+
+<p>用过 monaco-editor 吗？大家都在用 webpack 但它却走 amd 路线，我不知道你用什么方法让它支持 commonjs 的，但这一定耽误了你不少时间。</p>
+
+<p>包生态包括第三方包的成熟度，包的使用难易度，支持多少种模块化方案，是否支持 TS，有没有管理好自己的依赖等等。</p>
+
+<p>开箱即用是最好的，有长期维护组织的更佳。</p>
+
+<p>同时不要有太多相互竞争的社区方案为佳。比如工具库用 lodash 这很容易，但 React 数据流方案选择哪个？太多的竞争对手不断写软文抢夺用户（程序员）的注意力，试图说服他们加班重构。</p>
+
+<p><strong>评分：</strong></p>
+
+<ul>
+<li>A - 方案唯一且生态运作良好，维护记录标准规范且顺畅。</li>
+<li>B - 很多新晋网红包，且竞争选择多。</li>
+<li>C - 没有人给你做包，想用要自己封装。</li>
+</ul>
+
+<hr />
+
+<h3 id="社区">社区</h3>
+
+<p>能否快速在 Stack Overflow 搜到问题的答案能反映出社区的活跃度，不论是官方文档还是第三方进行的问答。</p>
+
+<p>社区越活跃，帮你提前踩的坑就越多，如果你遇到一个大家都没有遇到过的问题，并不代表你用得有多深度，而可能你根本就用错库了。</p>
+
+<p><strong>评分：</strong></p>
+
+<ul>
+<li>A - 各种论坛每日都很活跃，Github issue 问题日清。</li>
+<li>B - 论坛/聊天室不太活跃。</li>
+<li>C - 除了作者自吹的文档，再也找不到任何相关信息了。</li>
+</ul>
+
+<hr />
+
+<h3 id="学习曲线">学习曲线</h3>
+
+<p>不要以为把库功能做的强大，就算难用点也会有用户跪舔，这是幻觉。</p>
+
+<p>Vue 之所以那么火爆，是因为原生 HTML 的门槛比 JSX 低，而使用 React 的用户往往都觉得 JSX 比 HTML 门槛低。我也不知道该怎么描述，从 JS 可以产生一切的角度，学习 HTML 反而被认为是高门槛的体现。</p>
+
+<p>所以认清现实，JSX Star 多并不是其理论有多先进（理论确实先进），而是很多人觉得整体学习维护成本比 HTML 低。</p>
+
+<p><strong>评分：</strong></p>
+
+<ul>
+<li>A - 一天就能成为这个库的熟练搬砖工。</li>
+<li>B - 浪费了一周时间才能投入使用。</li>
+<li>C - 学了一周才发现之前的理解是错的，而且认识到这只是个开始。</li>
+</ul>
+
+<hr />
+
+<h3 id="文档">文档</h3>
+
+<p>写文档的人一般都是库的作者，这种人一般经验会比较丰富，写起文档一般不会考虑初学者的感受，所以找到一份对初学者友好的文档还是挺不容易的。</p>
+
+<p>对于库的维护者，要站在初学者角度去写文档，站在使用者角度，如果文档开头就看不懂的话，最好尽早换个文档或者换个库。</p>
+
+<p><strong>评分：</strong></p>
+
+<ul>
+<li>A - 专门维护文档站点、视频、图片、示例项目，再好一点的话可以有专门基金会组织编程比赛，通过某三岁孩子可以一天入门强力影射技术生态的完备性。</li>
+<li>B - 有最基本的 Readme 和 API 文档。</li>
+<li>C - Readme 写的是 Create react app，其他的只能查源码了。</li>
+</ul>
+
+<hr />
+
+<h3 id="工具">工具</h3>
+
+<p>工具可以从多个维度体现出这个库的优势，首先是确实带来了使用方便，其次展示了团队维护实力的雄厚（精力溢出到可以做周边工具了）。</p>
+
+<p>Redux 之所以这么火，Redux dev tools 功不可没，笔者读过一些心理学书籍，也经历过一些技术选型，看到 Redux dev tools 的图形化界面后，大脑因为受到视觉冲击比理性的逻辑思考大太多，潜意识里给 Redux 加了不少分，导致讨论结果都变得不太理性了。</p>
+
+<p>如果你的库能图形化表达，或者做一个 PPT 或者辅助工具，那一定会大大加分。（React chrome 插件在打开 react 做的网页时亮起来真的很酷，这个勋章很有仪式感，以至于我不想换一个框架）</p>
+
+<p><strong>评分：</strong></p>
+
+<ul>
+<li>A - 两个以上的工具，包括浏览器拓展、代码编辑器拓展、CLI 工具或者 SaaS 服务，实力碾压的话，会有许多花哨的辅助工具出现。</li>
+<li>B - 一个工具。</li>
+<li>C - 没有工具。</li>
+</ul>
+
+<hr />
+
+<h3 id="发展历史">发展历史</h3>
+
+<p>一个 Star 10K 的库，如果最早提交是十天前，就算不是刷的也最好也不要用，因为不知道哪天作者就不再维护了。</p>
+
+<p>历史越悠久的库使用风险越小，除非它所在的面被淘汰（技术栈、生态、编程语言等等）。</p>
+
+<p><strong>评分：</strong></p>
+
+<ul>
+<li>A - 4 年以上历史，有权威认证。</li>
+<li>B - 1-4 年历史，已经有不少人使用过了。</li>
+<li>C - 作者自己都没用过就安利你用到线上去。</li>
+</ul>
+
+<hr />
+
+<h3 id="团队">团队</h3>
+
+<p>看谁是这个库背后的男人。大公司广泛使用的开源库，并且有一定国际影响力，而且大厂也有成功开源历史经验的话，就会增加说服力。</p>
+
+<p>但 Vue 就是个例外，几乎凭尤大一人之力打造，对这种情况，笔者想说的是，一个真心热爱技术并践行全职维护的人，也许比一个背着 KPI 的团队维护副产品更靠谱。</p>
+
+<p><strong>评分：</strong></p>
+
+<ul>
+<li>A - 一线大厂，品质权威认证。</li>
+<li>B - 中型团队维护，并且有清晰的分工记录。</li>
+<li>C - 工作之余顺便开源出去，就没打算对这个库负责。</li>
+</ul>
+
+<hr />
+
+<h3 id="兼容性">兼容性</h3>
+
+<p>除了浏览器兼容性，库 API 的兼容性也非常重要。当你很容易联系到作者，并且改动 API 的建议被很快采纳时，你就要小心了。</p>
+
+<p>React Router 3 -&gt; 4 升级带来的阵痛大家都有体会过，babel7 放弃 stage 0-4 也带来不少吐槽，Angular1 和 Angular2 的区分直接让很多人粉转黑了。虽然许多时候频繁的更新是为了增添新功能，但如果带来 API 兼容问题，反而会招来反感。</p>
+
+<p>假如你们团队维护的 10 年间，因为某个库作者非常勤奋的更新导致以时间为维度，均匀分布了数十种不同的版本，你会发誓下一个项目不再使用这个库了。</p>
+
+<p><strong>评分：</strong></p>
+
+<ul>
+<li>A - 总是能兼容升级，实在不行就提前警告并告知在某个版本会废弃，并提供迁移工具，比如 React。</li>
+<li>B - 有 Break Change 但是文档把升级改动写的很清楚。</li>
+<li>C - 突然到来的小版本升级让你不得不重构之前的调用代码。</li>
+</ul>
+
+<hr />
+
+<h3 id="趋势">趋势</h3>
+
+<p>炒作也好，讨论也好，保持大家对这个库的新鲜关注非常重要，因为这能连带的让这个库做好上面说的很多点。</p>
+
+<p>但注意过分的炒作，可能会降低这个库的稳定性，毕竟在用户爆发式增长之前，最好有一部分当小白鼠。</p>
+
+<p><strong>评分：</strong></p>
+
+<ul>
+<li>A - 是 HackNews 的明星话题，Star 成千上万，各种会议以此为名（Vue conf，React conf）。</li>
+<li>B - 几百 Star，有一些讨论。</li>
+<li>C - 别看现在 Star 少，迟早有一天我会超过那啥那啥。</li>
+</ul>
+
+<hr />
+
+<h3 id="搬家成本">搬家成本</h3>
+
+<p>这个是作者补充的比较重要的一天：如果哪天不用这个库了，换成别的成本有多大？</p>
+
+<p>这方面测试库做的很好，很多主流测试库比如 Jest、Ava、Mocha、Jasmine 等之间都有互转的脚本，业界基本达成了一些共识和规范。</p>
+
+<p>比较坑的是 React、Vue、Angluar，使用之后你基本就被绑定了，至今没有谁可以无缝做各大框架的迁移。当然 JS 的年龄还很短，而且说不好未来还会被新语言、技术、容器颠覆而成为历史，标准化不是做不到而是需要时间，也许就在十几年之后，但是今天就是做不到。</p>
+
+<hr />
+
+<h2 id="3-总结">3 总结</h2>
+
+<p>下次技术选型讨论时，可以拿出规则一条一条比对了！</p>
+
+<p>然后技术选型只是基础库，利用这些基础可以维护好自己的开源库，把更多时间用在创造业务价值上。</p>
+
+<p>仔细思考就会发现，程序员开发的工具库也适合点线面体的概念。一个库 react-button 就是一个点，而它所在的线 react 如果被人抛弃了，无数个 react-xxx 也会翻船。而 react、vue、angluar 这些线都在 js 引擎这个面上，当可以用 C# 写 WebAssembly 时，Reason、Blazor、Dart 就会逐渐成为浏览器的主角，react 之类的库统统要回炉打造。而当未来人机互联不需要浏览器作为媒介时，js 引擎这个面依附的体 - 人机交互场景也被打翻了，这一浪又会引起多大的变化。</p>
+
+<p>所以技术选型是为了解决当下业务问题，仔细考虑好几个因素，适合解决业务场景就足够了。</p>
+
+<p>原文：<a href="https://www.freecodecamp.org/news/the-12-things-you-need-to-consider-when-evaluating-any-new-javascript-library-3908c4ed3f49/">https://www.freecodecamp.org/news/the-12-things-you-need-to-consider-when-evaluating-any-new-javascript-library-3908c4ed3f49/</a></p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://html6.club/post/scrollintoview/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://html6.club/post/scrollintoview/">使用scrollIntoView滚动页面</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://html6.club/post/github-private-org-push/">Github 私有仓库代码提交</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://html6.club/post/github-private-org-push/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="https://html6.club/js/ui.js"></script>
+<script src="https://html6.club/js/menus.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+

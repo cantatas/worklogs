@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript库 on CANTATAS</title>
+    <link>https://html6.club/tags/javascript%E5%BA%93/</link>
+    <description>Recent content in JavaScript库 on CANTATAS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2019. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 25 Sep 2018 12:02:33 +0800</lastBuildDate>
+    
+	<atom:link href="https://html6.club/tags/javascript%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>评估任何新的 JavaScript 库时，需要考虑的12件事</title>
+      <link>https://html6.club/post/the-12-things-you-need-to-consider-when-evaluating-any-new-javascript-library/</link>
+      <pubDate>Tue, 25 Sep 2018 12:02:33 +0800</pubDate>
+      
+      <guid>https://html6.club/post/the-12-things-you-need-to-consider-when-evaluating-any-new-javascript-library/</guid>
+      <description>1 引言 作者给出了从 12 个角度全面分析 JS 库的可用性，分别是：
+ 特性 稳定性 性能 包生态 社区 学习曲线 文档 工具 发展历史 团队 兼容性 趋势  下面总结一下作者的观点。
+2 概述 &amp;amp; 精读 特性 当你调研一个 JS 库，功能当然是最重要的，就好比 React 的用于开发 UI 界面非常方便，这是流行起来的一部分因素。
+但同时 React 解决的问题很聚焦，于是把例如 Router 和 Store 部分交给社区给解决方案，这就让 Vue 的官方维护生态模式发展了起来。但这更多取决于你的偏好，像 lodash 这种精简的库也会长盛不衰，重要的是这个库提供的能力是否解决了你的业务问题。
+评分：
+ A - 化腐朽为神奇。 B - 更优雅的解决方案。 C - 比现有方案差。  稳定性 这个库如果经常出 BUG，那显然无法在生产环境使用。最好经过严格的测试，保证这个库一定不会出错，这样我们就可以专心排查业务的问题了。
+评分：
+ A - BUG 很少，方便调试。 B - 不会影响你的稳定性，比如出 BUG 概率和你的业务代码相近。 C - 引入该库会让你背线上故障。  性能 这个库如果经常出 BUG，那显然无法在生产环境使用。最好经过严格的测试，保证这个库一定不会出错，这样我们就可以专心排查业务的问题了。</description>
+    </item>
+    
+  </channel>
+</rss>
