@@ -24,7 +24,7 @@
 关于此漏洞 Anthorp在GitHub问题中共享了一个代码片段，以显示axios API的示例用例，限制了收到的HTTP响应的大小：
 require(&#39;axios&#39;).get( &#39;https://upload.wikimedia.org/wikipedia/commons/f/fe/A_Different_Slant_on_Carina.jpg&#39;, { maxContentLength: 2000 } ) .then(d =&amp;gt; console.log(&#39;done&#39;)) .catch(e =&amp;gt; console.log(e.toString()))  但是，无论内容长度限制如何，HTTP连接都将保持打开状态，直到传输完整的文件大小数据，从而允许任何控制远程域或窃听不安全线路的人提供大文件大小并阻止来自完成了很长时间。
 在撰写本文时，尚未发布针对此漏洞的官方修复，但在项目的GitHub存储库中打开了以解决问题的Pull Request形式的社区参与，并等待合并和发布。
-我该怎么办？ 在您对axios的每次调用中应用以下缓解措施，以针对此漏洞进行防御性编码：
+我们该怎么办？ 在您对axios的每次调用中应用以下缓解措施，以针对此漏洞进行防御性编码：
 axios({ url: ..., maxContentLength: 2000, }).catch((error) =&amp;gt; { error.request.res.destroy(); });  </description>
     </item>
     
