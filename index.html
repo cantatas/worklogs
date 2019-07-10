@@ -351,6 +351,55 @@ axios({ url: ..., maxContentLength: 2000, }).catch((error) =&gt; { error.request
   
     <article>
   <header>
+    <h2><a href="https://html6.club/post/parse-base64/">JS使用 btoa和atob 编码解码 Base64</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/07/10 16:52</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://html6.club/tags/base64">Base64</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://html6.club/tags/btoa">btoa</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://html6.club/tags/atob">atob</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  btoa和atob是window对象的两个函数，其中btoa是binary to ascii，用于将binary的数据用ascii码表示，即Base64的编码过程，而atob则是ascii to binary，用于将ascii码解析成binary数据，看一个例子：
+// Define the string var string = 'Hello World!'; // Encode the String var encodedString = btoa(string); console.log(encodedString); // Outputs: &quot;SGVsbG8gV29ybGQh&quot; // Decode the String var decodedString = atob(encodedString); console.log(decodedString); // Outputs: &quot;Hello World!&quot;  可以看到，字符串“Hello World!”已被Base64编码和解码。但是，atob和btoa 不能编码Unicode字符 ：
+var string = &quot;Hello, 中国！&quot;; window.btoa(string); //报错： &gt; VM13204:2 Uncaught DOMException: Failed to execute 'btoa' on 'Window': The string to be encoded contains characters outside of the Latin1 range.
+  </p>
+
+  
+  <footer>
+    <a href="https://html6.club/post/parse-base64/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+  
+    <article>
+  <header>
     <h2><a href="https://html6.club/post/scrollintoview/">使用scrollIntoView滚动页面</a></h2>
 
     <div class="post-meta">

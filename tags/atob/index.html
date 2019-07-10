@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.55.6" />
 
-  <title>Posts &middot; CANTATAS</title>
+  <title>atob &middot; CANTATAS</title>
 
   
   
@@ -41,7 +41,7 @@
  
   
   <link rel="alternate" type="application/rss+xml" title="CANTATAS"
-    href='https://html6.club/post/index.xml' />
+    href='https://html6.club/tags/atob/index.xml' />
   
 
   
@@ -102,7 +102,7 @@
 
     
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href='https://html6.club/post/index.xml'><i
+      <a class="pure-menu-link" href='https://html6.club/tags/atob/index.xml'><i
           class="fa fa-rss fa-fw"></i>RSS</a>
     </li>
     
@@ -200,45 +200,59 @@
 
 
 <div class="header">
-  <h1>Posts</h1>
+  <h1>atob</h1>
 </div>
+
 <div class="content">
   
-  <h2>2019</h2>
-  <ul>
-  
-    <li><time>2019/05/10 14:58</time> - <a href="https://html6.club/post/axios-vulnerability/">Axios发现了一个 DoS 漏洞</a></li>
+    <article>
+  <header>
+    <h2><a href="https://html6.club/post/parse-base64/">JS使用 btoa和atob 编码解码 Base64</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>2017/07/10 16:52</time>
+  </div>
 
   
-    <li><time>2019/01/10 20:52</time> - <a href="https://html6.club/post/github-private-org-push/">Github 私有仓库代码提交</a></li>
 
   
-  </ul>
-  
-  <h2>2018</h2>
-  <ul>
-  
-    <li><time>2018/09/25 12:02</time> - <a href="https://html6.club/post/the-12-things-you-need-to-consider-when-evaluating-any-new-javascript-library/">评估任何新的 JavaScript 库时，需要考虑的12件事</a></li>
 
   
-  </ul>
   
-  <h2>2017</h2>
-  <ul>
   
-    <li><time>2017/07/10 16:52</time> - <a href="https://html6.club/post/parse-base64/">JS使用 btoa和atob 编码解码 Base64</a></li>
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://html6.club/tags/base64">Base64</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://html6.club/tags/btoa">btoa</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://html6.club/tags/atob">atob</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  btoa和atob是window对象的两个函数，其中btoa是binary to ascii，用于将binary的数据用ascii码表示，即Base64的编码过程，而atob则是ascii to binary，用于将ascii码解析成binary数据，看一个例子：
+// Define the string var string = 'Hello World!'; // Encode the String var encodedString = btoa(string); console.log(encodedString); // Outputs: &quot;SGVsbG8gV29ybGQh&quot; // Decode the String var decodedString = atob(encodedString); console.log(decodedString); // Outputs: &quot;Hello World!&quot;  可以看到，字符串“Hello World!”已被Base64编码和解码。但是，atob和btoa 不能编码Unicode字符 ：
+var string = &quot;Hello, 中国！&quot;; window.btoa(string); //报错： &gt; VM13204:2 Uncaught DOMException: Failed to execute 'btoa' on 'Window': The string to be encoded contains characters outside of the Latin1 range.
+  </p>
 
   
-    <li><time>2017/06/05 21:11</time> - <a href="https://html6.club/post/scrollintoview/">使用scrollIntoView滚动页面</a></li>
-
+  <footer>
+    <a href="https://html6.club/post/parse-base64/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
   
-    <li><time>2017/05/15 20:01</time> - <a href="https://html6.club/post/display-and-visibility/">display: none与visibility: hidden的区别</a></li>
+</article>
 
-  
-    <li><time>2017/02/05 17:39</time> - <a href="https://html6.club/post/use-weinre-doc/">使用weinre真机调试移动端H5页面</a></li>
-
-  
-  </ul>
   
 </div>
 
@@ -254,4 +268,3 @@
 
 </body>
 </html>
-

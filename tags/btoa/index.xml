@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>btoa on CANTATAS</title>
+    <link>https://html6.club/tags/btoa/</link>
+    <description>Recent content in btoa on CANTATAS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2019. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 10 Jul 2017 16:52:01 +0800</lastBuildDate>
+    
+	<atom:link href="https://html6.club/tags/btoa/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JS使用 btoa和atob 编码解码 Base64</title>
+      <link>https://html6.club/post/parse-base64/</link>
+      <pubDate>Mon, 10 Jul 2017 16:52:01 +0800</pubDate>
+      
+      <guid>https://html6.club/post/parse-base64/</guid>
+      <description>btoa和atob是window对象的两个函数，其中btoa是binary to ascii，用于将binary的数据用ascii码表示，即Base64的编码过程，而atob则是ascii to binary，用于将ascii码解析成binary数据，看一个例子：
+// Define the string var string = &#39;Hello World!&#39;; // Encode the String var encodedString = btoa(string); console.log(encodedString); // Outputs: &amp;quot;SGVsbG8gV29ybGQh&amp;quot; // Decode the String var decodedString = atob(encodedString); console.log(decodedString); // Outputs: &amp;quot;Hello World!&amp;quot;  可以看到，字符串“Hello World!”已被Base64编码和解码。但是，atob和btoa 不能编码Unicode字符 ：
+var string = &amp;quot;Hello, 中国！&amp;quot;; window.btoa(string); //报错： &amp;gt; VM13204:2 Uncaught DOMException: Failed to execute &#39;btoa&#39; on &#39;Window&#39;: The string to be encoded contains characters outside of the Latin1 range.</description>
+    </item>
+    
+  </channel>
+</rss>
