@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2019. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 05 Feb 2017 17:39:16 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 05 Feb 2018 17:39:16 +0800</lastBuildDate>
     
 	<atom:link href="https://html6.club/tags/%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>使用weinre真机调试移动端H5页面</title>
       <link>https://html6.club/post/use-weinre-doc/</link>
-      <pubDate>Sun, 05 Feb 2017 17:39:16 +0800</pubDate>
+      <pubDate>Mon, 05 Feb 2018 17:39:16 +0800</pubDate>
       
       <guid>https://html6.club/post/use-weinre-doc/</guid>
       <description> 1. 安装 npm npm install -g weinre  yarn yarn add weinre  2. 启动 weinre --httpPort 8081 --boundHost -all- /*这里的端口8081可以自定义*/  3. 浏览器打开weinre首页 4. 调试页面js引入 5. 远程真机调试  进入要调试的设备：

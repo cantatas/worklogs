@@ -7,10 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2019. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 10 May 2019 14:58:31 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jul 2019 14:02:44 +0800</lastBuildDate>
     
 	<atom:link href="https://html6.club/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>什么是防抖和节流？有什么区别？如何实现？</title>
+      <link>https://html6.club/post/debounce-and-throttle/</link>
+      <pubDate>Mon, 15 Jul 2019 14:02:44 +0800</pubDate>
+      
+      <guid>https://html6.club/post/debounce-and-throttle/</guid>
+      <description>防抖  触发高频事件后n秒内函数只会执行一次，如果n秒内高频事件再次被触发，则重新计算时间
+ 思路：  每次触发事件时都取消之前的延时调用方法
+ function debounce(fn) { let timeout = null; // 创建一个标记用来存放定时器的返回值 return function () { clearTimeout(timeout); // 每当用户输入的时候把前一个 setTimeout clear 掉 timeout = setTimeout(() =&amp;gt; { // 然后又创建一个新的 setTimeout, 这样就能保证输入字符后的 interval 间隔内如果还有字符输入的话，就不会执行 fn 函数 fn.apply(this, arguments); }, 500); }; } function sayHi() { console.log(&#39;防抖成功&#39;); } var inp = document.getElementById(&#39;inp&#39;); inp.addEventListener(&#39;input&#39;, debounce(sayHi)); // 防抖  节流  高频事件触发，但在n秒内只会执行一次，所以节流会稀释函数的执行频率
+ 思路：  每次触发事件时都判断当前是否有等待执行的延时函数
+ function throttle(fn) { let canRun = true; // 通过闭包保存一个标记 return function () { if (!</description>
+    </item>
+    
+    <item>
+      <title>JS使用 btoa和atob 编码解码 Base64</title>
+      <link>https://html6.club/post/parse-base64/</link>
+      <pubDate>Wed, 10 Jul 2019 16:52:01 +0800</pubDate>
+      
+      <guid>https://html6.club/post/parse-base64/</guid>
+      <description>btoa和atob是window对象的两个函数，其中btoa是binary to ascii，用于将binary的数据用ascii码表示，即Base64的编码过程，而atob则是ascii to binary，用于将ascii码解析成binary数据，看一个例子：
+// Define the string var string = &#39;Hello World!&#39;; // Encode the String var encodedString = btoa(string); console.log(encodedString); // Outputs: &amp;quot;SGVsbG8gV29ybGQh&amp;quot; // Decode the String var decodedString = atob(encodedString); console.log(decodedString); // Outputs: &amp;quot;Hello World!&amp;quot;  可以看到，字符串“Hello World!”已被Base64编码和解码。但是，atob和btoa 不能编码Unicode字符 ：
+var string = &amp;quot;Hello, 中国！&amp;quot;; window.btoa(string); //报错： &amp;gt; VM13204:2 Uncaught DOMException: Failed to execute &#39;btoa&#39; on &#39;Window&#39;: The string to be encoded contains characters outside of the Latin1 range.</description>
+    </item>
     
     <item>
       <title>Axios发现了一个 DoS 漏洞</title>
@@ -56,16 +80,28 @@ axios({ url: ..., maxContentLength: 2000, }).catch((error) =&amp;gt; { error.req
     </item>
     
     <item>
-      <title>什么是防抖和节流？有什么区别？如何实现？</title>
-      <link>https://html6.club/post/debounce-and-throttle/</link>
-      <pubDate>Sun, 15 Jul 2018 14:02:44 +0800</pubDate>
+      <title>使用scrollIntoView滚动页面</title>
+      <link>https://html6.club/post/scrollintoview/</link>
+      <pubDate>Tue, 05 Jun 2018 21:11:33 +0800</pubDate>
       
-      <guid>https://html6.club/post/debounce-and-throttle/</guid>
-      <description>防抖  触发高频事件后n秒内函数只会执行一次，如果n秒内高频事件再次被触发，则重新计算时间
- 思路：  每次触发事件时都取消之前的延时调用方法
- function debounce(fn) { let timeout = null; // 创建一个标记用来存放定时器的返回值 return function () { clearTimeout(timeout); // 每当用户输入的时候把前一个 setTimeout clear 掉 timeout = setTimeout(() =&amp;gt; { // 然后又创建一个新的 setTimeout, 这样就能保证输入字符后的 interval 间隔内如果还有字符输入的话，就不会执行 fn 函数 fn.apply(this, arguments); }, 500); }; } function sayHi() { console.log(&#39;防抖成功&#39;); } var inp = document.getElementById(&#39;inp&#39;); inp.addEventListener(&#39;input&#39;, debounce(sayHi)); // 防抖  节流  高频事件触发，但在n秒内只会执行一次，所以节流会稀释函数的执行频率
- 思路：  每次触发事件时都判断当前是否有等待执行的延时函数
- function throttle(fn) { let canRun = true; // 通过闭包保存一个标记 return function () { if (!</description>
+      <guid>https://html6.club/post/scrollintoview/</guid>
+      <description>DOM规范中并没有规定各浏览器需要实现怎样的滚动页面区域，各浏览器实现了相应的方法，可以使用不同的方式控制页面区域的滚动。这些方法作为HTMLElement类型的扩展存在，所以它能在所有元素上使用。 1、scrollIntoView(alignWithTop) 滚动浏览器窗口或容器元素，以便在当前视窗的可见范围看见当前元素。如果alignWithTop为true，或者省略它，窗口会尽可能滚动到自身顶部与元素顶部平齐。&amp;mdash;&amp;mdash;-目前各浏览器均支持
+2、scrollIntoViewIfNeeded(alignCenter) 只在当前元素在视窗的可见范围内不可见的情况下，才滚动浏览器窗口或容器元素，最终让当前元素可见。如果当前元素在视窗中可见，这个方法不做任何处理。如果将可选参数alignCenter设置为true，则表示尽量将元素显示在视窗中部（垂直方向）&amp;mdash;&amp;mdash;Safari、Chrome实现了这个方法
+3、scrollByLines(lineCount) 将元素的内容滚动指定的行数的高度，lineCount的值可以为正值或是负值。&amp;mdash;Safari、Chrome实现了这个方法
+4、scrollByPages(pageCount) 将元素的内容滚动指定的页面的高度，具体高度由元素的高度决定。&amp;mdash;Safari、Chrome实现了这个方法
+scrollIntoView()和scrollIntoVIewIfNeeded()作用的是元素的窗口，而scrollByLines()、scrollByPages()影响元素自身，下面是几个示例： 将页面主体滚动5行: document.body.scrollByLines(5);  确保当前元素可见： document.getElementById(&#39;test&#39;).scrollIntoView();  确保只在当前元素不可见的情况下才使其可见： document.getElementById(&#39;test&#39;).scrollIntoViewIfNeeded();  scrollIntoViewIfNeeded可以接受一个Boolean型参数，和scrollIntoView不同，true为默认值，但不是滚动到顶部，而是让元素在可视区域中居中对齐；false时元素可能顶部或底部对齐。
+将页面主体往回滚1页： doument.body.scrollByPages(-1);  由于只有scrollIntoView被各浏览器均支持，所以这个方法最为常用</description>
+    </item>
+    
+    <item>
+      <title>display: none与visibility: hidden的区别</title>
+      <link>https://html6.club/post/display-and-visibility/</link>
+      <pubDate>Tue, 15 May 2018 20:01:22 +0800</pubDate>
+      
+      <guid>https://html6.club/post/display-and-visibility/</guid>
+      <description>visibility: hidden和display: none的区别不仅仅在于display: none隐藏后的元素不占据任何空间，而visibility: hidden隐藏后的元素空间依旧保留 ，实际上没那么简单，visibility是一个非常有故事性的属性 1、visibility具有继承性，给父元素设置 visibility:hidden; 子元素也会继承这个属性。但是如果重新给子元素设置visibility: visible,则子元素又会显示出来。这个和display: none有着质的区别
+2、visibility: hidden 不会影响计数器的计数，如图所示，visibility: hidden 虽然让一个元素不见了，但是其计数器仍在运行。这和display: none完全不一样
+3、CSS3 的 transition 支持 visibility 属性，但是并不支持 display，由于 transition 可以延迟执行，因此可以配合visibility使用纯 css 实现 hover 延时显示效果。提高用户体验。</description>
     </item>
     
     <item>
@@ -85,45 +121,9 @@ let arr = [], set = new Set(), n = 1000000; for (let i = 0; i &amp;lt; n; i++) {
     </item>
     
     <item>
-      <title>JS使用 btoa和atob 编码解码 Base64</title>
-      <link>https://html6.club/post/parse-base64/</link>
-      <pubDate>Mon, 10 Jul 2017 16:52:01 +0800</pubDate>
-      
-      <guid>https://html6.club/post/parse-base64/</guid>
-      <description>btoa和atob是window对象的两个函数，其中btoa是binary to ascii，用于将binary的数据用ascii码表示，即Base64的编码过程，而atob则是ascii to binary，用于将ascii码解析成binary数据，看一个例子：
-// Define the string var string = &#39;Hello World!&#39;; // Encode the String var encodedString = btoa(string); console.log(encodedString); // Outputs: &amp;quot;SGVsbG8gV29ybGQh&amp;quot; // Decode the String var decodedString = atob(encodedString); console.log(decodedString); // Outputs: &amp;quot;Hello World!&amp;quot;  可以看到，字符串“Hello World!”已被Base64编码和解码。但是，atob和btoa 不能编码Unicode字符 ：
-var string = &amp;quot;Hello, 中国！&amp;quot;; window.btoa(string); //报错： &amp;gt; VM13204:2 Uncaught DOMException: Failed to execute &#39;btoa&#39; on &#39;Window&#39;: The string to be encoded contains characters outside of the Latin1 range.</description>
-    </item>
-    
-    <item>
-      <title>使用scrollIntoView滚动页面</title>
-      <link>https://html6.club/post/scrollintoview/</link>
-      <pubDate>Mon, 05 Jun 2017 21:11:33 +0800</pubDate>
-      
-      <guid>https://html6.club/post/scrollintoview/</guid>
-      <description>DOM规范中并没有规定各浏览器需要实现怎样的滚动页面区域，各浏览器实现了相应的方法，可以使用不同的方式控制页面区域的滚动。这些方法作为HTMLElement类型的扩展存在，所以它能在所有元素上使用。 1、scrollIntoView(alignWithTop) 滚动浏览器窗口或容器元素，以便在当前视窗的可见范围看见当前元素。如果alignWithTop为true，或者省略它，窗口会尽可能滚动到自身顶部与元素顶部平齐。&amp;mdash;&amp;mdash;-目前各浏览器均支持
-2、scrollIntoViewIfNeeded(alignCenter) 只在当前元素在视窗的可见范围内不可见的情况下，才滚动浏览器窗口或容器元素，最终让当前元素可见。如果当前元素在视窗中可见，这个方法不做任何处理。如果将可选参数alignCenter设置为true，则表示尽量将元素显示在视窗中部（垂直方向）&amp;mdash;&amp;mdash;Safari、Chrome实现了这个方法
-3、scrollByLines(lineCount) 将元素的内容滚动指定的行数的高度，lineCount的值可以为正值或是负值。&amp;mdash;Safari、Chrome实现了这个方法
-4、scrollByPages(pageCount) 将元素的内容滚动指定的页面的高度，具体高度由元素的高度决定。&amp;mdash;Safari、Chrome实现了这个方法
-scrollIntoView()和scrollIntoVIewIfNeeded()作用的是元素的窗口，而scrollByLines()、scrollByPages()影响元素自身，下面是几个示例： 将页面主体滚动5行: document.body.scrollByLines(5);  确保当前元素可见： document.getElementById(&#39;test&#39;).scrollIntoView();  确保只在当前元素不可见的情况下才使其可见： document.getElementById(&#39;test&#39;).scrollIntoViewIfNeeded();  scrollIntoViewIfNeeded可以接受一个Boolean型参数，和scrollIntoView不同，true为默认值，但不是滚动到顶部，而是让元素在可视区域中居中对齐；false时元素可能顶部或底部对齐。
-将页面主体往回滚1页： doument.body.scrollByPages(-1);  由于只有scrollIntoView被各浏览器均支持，所以这个方法最为常用</description>
-    </item>
-    
-    <item>
-      <title>display: none与visibility: hidden的区别</title>
-      <link>https://html6.club/post/display-and-visibility/</link>
-      <pubDate>Mon, 15 May 2017 20:01:22 +0800</pubDate>
-      
-      <guid>https://html6.club/post/display-and-visibility/</guid>
-      <description>visibility: hidden和display: none的区别不仅仅在于display: none隐藏后的元素不占据任何空间，而visibility: hidden隐藏后的元素空间依旧保留 ，实际上没那么简单，visibility是一个非常有故事性的属性 1、visibility具有继承性，给父元素设置 visibility:hidden; 子元素也会继承这个属性。但是如果重新给子元素设置visibility: visible,则子元素又会显示出来。这个和display: none有着质的区别
-2、visibility: hidden 不会影响计数器的计数，如图所示，visibility: hidden 虽然让一个元素不见了，但是其计数器仍在运行。这和display: none完全不一样
-3、CSS3 的 transition 支持 visibility 属性，但是并不支持 display，由于 transition 可以延迟执行，因此可以配合visibility使用纯 css 实现 hover 延时显示效果。提高用户体验。</description>
-    </item>
-    
-    <item>
       <title>使用weinre真机调试移动端H5页面</title>
       <link>https://html6.club/post/use-weinre-doc/</link>
-      <pubDate>Sun, 05 Feb 2017 17:39:16 +0800</pubDate>
+      <pubDate>Mon, 05 Feb 2018 17:39:16 +0800</pubDate>
       
       <guid>https://html6.club/post/use-weinre-doc/</guid>
       <description> 1. 安装 npm npm install -g weinre  yarn yarn add weinre  2. 启动 weinre --httpPort 8081 --boundHost -all- /*这里的端口8081可以自定义*/  3. 浏览器打开weinre首页 4. 调试页面js引入 5. 远程真机调试  进入要调试的设备：

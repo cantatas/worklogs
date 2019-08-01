@@ -1,228 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="visibility具有继承性，给父元素设置visibility:hidden;子元素也会继承这个属性。但是如果重新给子元素设置visibility: visible,则子元素又会显示出来">
-  <meta name="generator" content="Hugo 0.55.6" />
-
-  <title>display: none与visibility: hidden的区别 &middot; CANTATAS</title>
-
-  
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
-
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
-  <!--<![endif]-->
-
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://html6.club/css/side-menu-old-ie.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://html6.club/css/side-menu.css">
-  <!--<![endif]-->
-
-  <link rel="stylesheet" href="https://html6.club/css/blackburn.css">
-
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
- 
-  
-
-  
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  
-  <script>hljs.initHighlightingOnLoad();</script>
-  
-
-  <link rel="shortcut icon" href="https://html6.club/img/favicon.ico" type="image/x-icon" />
-
-  
-  
-
-</head>
-
-
-<body>
-<div id="layout">
-
-  
-<a href="#menu" id="menuLink" class="menu-link">
-  
-  <span></span>
-</a>
-<div id="menu">
-
-  
-  <a class="pure-menu-heading brand" href="https://html6.club/">Catatas</a>
-
-
-  <div class="pure-menu">
-    <ul class="pure-menu-list">
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://html6.club/"><i class='fa fa-home fa-fw'></i>Home</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://html6.club/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://html6.club/about/"><i class='fa fa-user fa-fw'></i>About</a>
-      
-        </li>
-      
-    </ul>
-  </div>
-
-  <div class="pure-menu social">
-  <ul class="pure-menu-list">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-  </ul>
-</div>
-
-
-  <div>
-  <div class="small-print">
-    <small>&copy; 2019. All rights reserved.</small>
-  </div>
-  <div class="small-print">
-    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
-    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
-  </div>
-</div>
-
-</div>
-
-
-  <div id="main">
-
-
-<div class="header">
-  <h1>display: none与visibility: hidden的区别</h1>
-  <h2>visibility具有继承性，给父元素设置visibility:hidden;子元素也会继承这个属性。但是如果重新给子元素设置visibility: visible,则子元素又会显示出来</h2>
-</div>
-<div class="content">
-
-  <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>2017/05/15 20:01</time>
-  </div>
-
-  
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://html6.club/tags/css">css</a>
-    
-  </div>
-  
-  
-
-</div>
-
-  
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>display: none与visibility: hidden的区别</title>
+		<meta name="viewport" content="width=device-width">
+		
+		<link rel="stylesheet" href="https://html6.club/css/hybrid.css">
+		<link rel="stylesheet" href="https://html6.club/css/style.css">
+		<link rel="stylesheet" href="https://html6.club/css/colors-dark.css">
+
+		
+	</head>
+	<body>
+		<header id="header">
+			<h1><a href="https://html6.club/">CANTATAS</a></h1>
+			<p></p>
+		</header>
+
+		<div id="page">
+			<div id="sidebar">
+				<nav>
+	
+		<ul class="nav">
+			
+				<li><a href="https://html6.club/"><span>Home</span></a></li>
+			
+				<li><a href="https://html6.club/post/"><span>Posts</span></a></li>
+			
+				<li><a href="https://html6.club/about/"><span>About</span></a></li>
+			
+		</ul>
+	
+</nav>
+
+			</div>
+
+			<div id="content">
+				
+	<article class="post">
+		<h1><a href="https://html6.club/post/display-and-visibility/">display: none与visibility: hidden的区别</a> </h1>
+
+		<div class="post-content">
 
 <h3 id="visibility-hidden和display-none的区别不仅仅在于display-none隐藏后的元素不占据任何空间-而visibility-hidden隐藏后的元素空间依旧保留-实际上没那么简单-visibility是一个非常有故事性的属性">visibility: hidden和display: none的区别不仅仅在于display: none隐藏后的元素不占据任何空间，而visibility: hidden隐藏后的元素空间依旧保留 ，实际上没那么简单，visibility是一个非常有故事性的属性</h3>
 
@@ -231,55 +49,22 @@
 <p>2、visibility: hidden 不会影响计数器的计数，如图所示，<code>visibility: hidden</code> 虽然让一个元素不见了，但是其计数器仍在运行。这和display: none完全不一样</p>
 
 <p>3、CSS3 的 transition 支持 visibility 属性，但是并不支持 display，由于 transition 可以延迟执行，因此可以配合visibility使用纯 css 实现 hover 延时显示效果。提高用户体验。</p>
-
-
-  
-<div class="prev-next-post pure-g">
-  <div class="pure-u-1-24" style="text-align: left;">
-    
-    <a href="https://html6.club/post/use-weinre-doc/"><i class="fa fa-chevron-left"></i></a>
-    
-  </div>
-  <div class="pure-u-10-24">
-    
-    <nav class="prev">
-      <a href="https://html6.club/post/use-weinre-doc/">使用weinre真机调试移动端H5页面</a>
-    </nav>
-    
-  </div>
-  <div class="pure-u-2-24">
-    &nbsp;
-  </div>
-  <div class="pure-u-10-24">
-    
-    <nav class="next">
-      <a href="https://html6.club/post/scrollintoview/">使用scrollIntoView滚动页面</a>
-    </nav>
-    
-  </div>
-  <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="https://html6.club/post/scrollintoview/"><i class="fa fa-chevron-right"></i></a>
-    
-  </div>
 </div>
 
+		<p class="meta">Posted on <span class="postdate">15. May 2018</span></p>
+	</article>
 
+			</div>
 
-  
+			<footer id="footer">
+				<p class="copyright">
+					
+						&amp;copy; 2019. All rights reserved.
+					
+				</p>
+			</footer>
+		</div>
 
-</div>
-
-</div>
-</div>
-<script src="https://html6.club/js/ui.js"></script>
-<script src="https://html6.club/js/menus.js"></script>
-
-
-
-
-
-
-</body>
+		
+	</body>
 </html>
-

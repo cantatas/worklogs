@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2019. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 15 Jul 2018 14:02:44 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jul 2019 14:02:44 +0800</lastBuildDate>
     
 	<atom:link href="https://html6.club/tags/%E8%8A%82%E6%B5%81/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>什么是防抖和节流？有什么区别？如何实现？</title>
       <link>https://html6.club/post/debounce-and-throttle/</link>
-      <pubDate>Sun, 15 Jul 2018 14:02:44 +0800</pubDate>
+      <pubDate>Mon, 15 Jul 2019 14:02:44 +0800</pubDate>
       
       <guid>https://html6.club/post/debounce-and-throttle/</guid>
       <description>防抖  触发高频事件后n秒内函数只会执行一次，如果n秒内高频事件再次被触发，则重新计算时间
