@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>苹果电脑命令行查看本机的公网IP和内网IP</title>
+		<meta name="viewport" content="width=device-width">
+		
+		<link rel="stylesheet" href="https://html6.club/css/hybrid.css">
+		<link rel="stylesheet" href="https://html6.club/css/style.css">
+		<link rel="stylesheet" href="https://html6.club/css/colors-dark.css">
+
+		
+	</head>
+	<body>
+		<header id="header">
+			<h1><a href="https://html6.club/">CANTATAS</a></h1>
+			<p></p>
+		</header>
+
+		<div id="page">
+			<div id="sidebar">
+				<nav>
+	
+</nav>
+
+			</div>
+
+			<div id="content">
+				
+	<article class="post">
+		<h1><a href="https://html6.club/post/mac-view-ip/">苹果电脑命令行查看本机的公网IP和内网IP</a> </h1>
+
+		<div class="post-content">
+
+<h2 id="查看本机公网ip命令">查看本机公网IP命令</h2>
+
+<pre><code class="language-Shell">
+curl ifconfig.me
+
+</code></pre>
+
+<h2 id="json格式化">json格式化</h2>
+
+<pre><code class="language-Shell">
+curl ipinfo.io/json
+
+</code></pre>
+
+<h2 id="还可以用wget">还可以用wget</h2>
+
+<pre><code class="language-Shell">
+wget http://ipecho.net/plain -O - -q ; echo
+wget http://observebox.com/ip -O - -q ; echo
+
+</code></pre>
+
+<h2 id="查看本机内网ip">查看本机内网IP</h2>
+
+<pre><code class="language-Shell">
+ifconfig
+
+</code></pre>
+
+<p>（ 找到名为 en0（本地以太网）的网络，inet 就是本机当前ip地址 ）</p>
+</div>
+
+		<p class="meta">Posted on <span class="postdate">07. August 2019</span></p>
+	</article>
+
+			</div>
+
+			<footer id="footer">
+				<p class="copyright">
+					
+						&amp;copy; 2019. All rights reserved.
+					
+				</p>
+			</footer>
+		</div>
+
+		
+	</body>
+</html>

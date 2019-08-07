@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; 2019. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 15 Jul 2019 14:02:44 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 07 Aug 2019 15:28:21 +0800</lastBuildDate>
     
 	<atom:link href="https://html6.club/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>苹果电脑命令行查看本机的公网IP和内网IP</title>
+      <link>https://html6.club/post/mac-view-ip/</link>
+      <pubDate>Wed, 07 Aug 2019 15:28:21 +0800</pubDate>
+      
+      <guid>https://html6.club/post/mac-view-ip/</guid>
+      <description>查看本机公网IP命令 curl ifconfig.me  json格式化 curl ipinfo.io/json  还可以用wget wget http://ipecho.net/plain -O - -q ; echo wget http://observebox.com/ip -O - -q ; echo  查看本机内网IP ifconfig  （ 找到名为 en0（本地以太网）的网络，inet 就是本机当前ip地址 ）</description>
+    </item>
     
     <item>
       <title>什么是防抖和节流？有什么区别？如何实现？</title>
