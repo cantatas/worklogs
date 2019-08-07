@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>苹果电脑查看ip on CANTATAS</title>
+    <link>https://html6.club/tags/%E8%8B%B9%E6%9E%9C%E7%94%B5%E8%84%91%E6%9F%A5%E7%9C%8Bip/</link>
+    <description>Recent content in 苹果电脑查看ip on CANTATAS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; 2019. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 07 Aug 2019 15:28:21 +0800</lastBuildDate>
+    
+	<atom:link href="https://html6.club/tags/%E8%8B%B9%E6%9E%9C%E7%94%B5%E8%84%91%E6%9F%A5%E7%9C%8Bip/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>苹果电脑命令行查看本机的公网IP和内网IP</title>
+      <link>https://html6.club/post/mac-view-ip/</link>
+      <pubDate>Wed, 07 Aug 2019 15:28:21 +0800</pubDate>
+      
+      <guid>https://html6.club/post/mac-view-ip/</guid>
+      <description>查看本机公网IP命令 curl ifconfig.me  json格式化 curl ipinfo.io/json  还可以用wget wget http://ipecho.net/plain -O - -q ; echo wget http://observebox.com/ip -O - -q ; echo  查看本机内网IP ifconfig  （ 找到名为 en0（本地以太网）的网络，inet 就是本机当前ip地址 ）</description>
+    </item>
+    
+  </channel>
+</rss>
